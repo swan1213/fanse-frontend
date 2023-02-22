@@ -1,0 +1,78 @@
+{
+  "name": "bitfan",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build; /var/www/frontend/sync_dist.sh",
+    "lint": "vue-cli-service lint",
+    "i18n:report": "vue-cli-service i18n:report --src \"./src/**/*.?(js|vue)\" --locales \"./src/locales/**/*.json\""
+  },
+  "dependencies": {
+    "@fanse-work/vue-record": "git+https://github.com/fanse-work/bio-voice-vue-record-fix.git#fix/safari",
+    "@stripe/stripe-js": "^1.25.0",
+    "@vue/composition-api": "^1.7.0",
+    "axios": "^0.22.0",
+    "bootstrap": "^4.6.0",
+    "bootstrap-icons": "^1.7.2",
+    "bootstrap-vue": "^2.21.2",
+    "chart.js": "^2.9.4",
+    "chartjs-plugin-colorschemes": "^0.4.0",
+    "dayjs": "^1.10.7",
+    "dotenv": "^10.0.0",
+    "photoswipe": "^4.1.3",
+    "pusher-js": "^7.0.3",
+    "register-service-worker": "^1.7.1",
+    "swiper": "^6.8.4",
+    "v-mask": "^2.3.0",
+    "video.js": "^7.11.4",
+    "videojs-contrib-hls.js": "^3.2.0",
+    "vue": "^2.7.8",
+    "vue-analytics": "^5.22.1",
+    "vue-audio-visual": "^2.5.0",
+    "vue-axios": "^3.4.1",
+    "vue-chartjs": "^3.5.1",
+    "vue-clipboard2": "^0.3.3",
+    "vue-google-login": "^2.0.5",
+    "vue-i18n": "^8.26.3",
+    "vue-recaptcha-v3": "^1.9.0",
+    "vue-router": "^3.5.2",
+    "vue-social-auth": "^1.4.9",
+    "vue-video-player": "^5.0.2",
+    "vue-wave-surfer": "^1.0.1",
+    "vue2-dropzone": "^3.6.0",
+    "vuex": "^3.6.2"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-pwa": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "node-sass": "^7.0.3",
+    "sass-loader": "^10.0.5",
+    "vue-cli-plugin-i18n": "~2.3.1",
+    "vue-template-compiler": "^2.7.8"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
